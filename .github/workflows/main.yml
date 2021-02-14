@@ -36,6 +36,6 @@ jobs:
           name: skim6.18.04
       - name: skim
         run: |
-          printf $USER_PASS | base64 -d | kinit $USER_NAME
+          printf $USER_PASS | base64 -d | kinit $USER_NAME@CERN.CH
           chmod +x ./skim
           ./skim root://eosuser.cern.ch//eos/user/g/gstark/AwesomeWorkshopFeb2020/GluGluToHToTauTau.root skim_ggH.root 19.6 11467.0 0.1
