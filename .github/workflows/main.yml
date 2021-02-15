@@ -11,7 +11,7 @@ jobs:
           COMPILER=$(root-config --cxx)
           FLAGS=$(root-config --cflags --libs)
           $COMPILER -g -O3 -Wall -Wextra -Wpedantic -o skim skim.cxx $FLAGS
-      - uses: actions/artifacts-upload@v2
+      - uses: actions/upload-artifact@v2
         with:
           name: skim6.18.04
           path: skim 
